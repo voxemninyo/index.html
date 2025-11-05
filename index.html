@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buse'nin Boks Arenası 🥊💋</title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(to top, #ffcccc, #ffe6cc);
+        font-family: 'Arial', sans-serif;
+        overflow: hidden;
+    }
+    .glove {
+        width: 120px;
+        height: 120px;
+        background: red;
+        border-radius: 50%;
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: bold;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        transition: transform 0.2s;
+        font-size: 50px;
+    }
+    .glove:hover {
+        transform: scale(1.3) rotate(-10deg);
+    }
+</style>
+</head>
+<body>
+
+<div class="glove" onclick="punchMessage()">🥊</div>
+
+<script>
+    const messages = [
+        "Buse, sen gerçek bir şampiyonsun! 💖💋💋",
+        "Buse, senin enerjinle herkes yenilir! ⚡💋💋",
+        "Haydi Buse, dünyayı salla! 🌍💋💋",
+        "Buse, her yumrukta kalpler kazanılır 💖💋💋"
+    ];
+
+    function punchMessage() {
+        const randomIndex = Math.floor(Math.random() * messages.length);
+        alert(messages[randomIndex]);
+    }
+</script>
+
+</body>
+</html>
